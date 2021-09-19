@@ -9,14 +9,13 @@ import Navigator from './routes/homeStack';
 export default function App() {
 
   return (
-    <Navigator>
       <View style ={styles.container}>
         <Header />
         <ScrollView>
           <Washer/>
+          <Dryer/>
         </ScrollView>
       </View>
-    </Navigator>
   );
 }
 
