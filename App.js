@@ -1,20 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity, ScrollView } from 'react-native';
-import washingMachineButtons from './buttons';
 import Header from './components/header';
 import Washer from './components/washer';
 import Dryer from './components/dryer';
+import Navigator from './routes/homeStack';
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Header />
-      <ScrollView>
-        <Washer />
-      </ScrollView>
-    </View>
+    <Navigator>
+      <View style ={styles.container}>
+        <Header />
+        <ScrollView>
+          <Washer/>
+        </ScrollView>
+      </View>
+    </Navigator>
   );
 }
 
