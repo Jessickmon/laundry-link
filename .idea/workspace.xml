@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f05471a4-57a5-412e-a9a2-f1da64bd727c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/styling.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dryer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/dryer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/washer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/washer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="f05471a4-57a5-412e-a9a2-f1da64bd727c" name="Changes" comment="button commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632004459584</updated>
-      <workItem from="1632004461274" duration="13068000" />
+      <workItem from="1632004461274" duration="13261000" />
     </task>
+    <task id="LOCAL-00001" summary="button commit">
+      <created>1632033672677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632033672679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,5 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="button commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="button commit" />
   </component>
 </project>
