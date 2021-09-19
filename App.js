@@ -1,34 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, TouchableOpacity, ScrollView } from 'react-native';
 import washingMachineButtons from './buttons';
+import Header from './components/header';
+import Washer from './components/washer';
+import Dryer from './components/dryer';
 
 export default function App() {
-  const [washers, setWasher] = useState([
-    {name: 'Washer 1', key: '1'},
-    {name: 'Washer 2', key: '2'},
-    {name: 'Washer 3', key: '3'},
-    {name: 'Washer 4', key: '4'},
-    {name: 'Washer 5', key: '5'},
-    {name: 'Washer 6', key: '6'},
-  ]);
-
-  const clickHandler = () => {
-    setName('Used');
-  }
 
   return (
     <View style={styles.container}>
-
-    { washers.map((item) =>{
-      return (
-        <View key={item.key}>
-          <Text style={styles.item}>{item.name}</Text>
-        </View>
-      )
-    })}
-        <View style={styles.buttonContainer}>
-      </View>
+      <Header />
+      <ScrollView>
+        <Washer />
+      </ScrollView>
     </View>
   );
 }
@@ -36,19 +21,27 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    //flexDirection: "column",
     backgroundColor: '#fff',
-    paddingTop: 140,
-    // alignItems: 'center',
+    //paddingTop: 100,
+    //alignItems: 'left',
     // justifyContent: 'center',
   },
   buttonContainer: {
-    marginTop: 50,
+    //marginTop: 50,
+    //flex: 1,
   },
   item: {
+    flex: 1,
     borderColor: 'black',
     borderWidth: 1,
-    padding: 40,
+    textAlign: "left",
+    padding: 30,
     backgroundColor: 'white',
     fontSize: 25,
   },
+  header: {
+    padding: 30,
+    fontSize: 25,
+  }
 });
