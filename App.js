@@ -4,7 +4,8 @@ import { StyleSheet, Text, View, Button, Image, TouchableOpacity, ScrollView } f
 import Header from './components/header';
 import Washer from './components/washer';
 import Dryer from './components/dryer';
-import Navigator from './routes/homeStack';
+import Chat from './components/chat'
+
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
         <Header />
         <ScrollView>
           <Washer/>
+          <Chat />
           <Dryer/>
         </ScrollView>
       </View>

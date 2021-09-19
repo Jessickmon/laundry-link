@@ -10,7 +10,7 @@ export default function Chat() {
         <View>
             <View style = {styles.textTop}>
                 <Text>{"\n"} Washer</Text>
-                <TextInput 
+                <TextInput
                     style={styles.input}
                     placeholder='Washer Number'
                     onChangeText={(val) => setWasher(val) }
@@ -29,8 +29,8 @@ export default function Chat() {
             </View>
             <View>
                 <Button
-                        title="Send"
-                        onPress={() => Alert.alert('Message Sent')}
+                    title="Send"
+                    onPress={() => Alert.alert('Message Sent!')}
                 />
             </View>
         </View>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center', 
         display:'flex',
-        paddingTop: 200,
+        //paddingTop: 200,
     },
     textBottom: {
         flexDirection: 'row',
