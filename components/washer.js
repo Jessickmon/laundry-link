@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 
-export default function Washer() {
+export default function Washer({ navigation }) {
+
+    const pressHandler = () => {
+        navigation.navigate('Dryer');
+    }
+
     const [washers, setWasher] = useState([
         { name: 'Washer 1', key: '1' },
         { name: 'Washer 2', key: '2' },
@@ -11,8 +16,10 @@ export default function Washer() {
         { name: 'Washer 5', key: '5' },
         { name: 'Washer 6', key: '6' },
     ]);
+
     return (
         <View>
+            <Button title='Dryer' onPress={pressHandler} />
             {washers.map(item => (
                 <View key={item.key}>
                     <Text style={styles.item}>{item.name}</Text>
