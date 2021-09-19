@@ -1,4 +1,7 @@
-function startTimer(duration, display) {
+import React from 'react';
+
+
+export default function startTimer(duration, display) {
     duration = duration * 60
     var timer = duration, minutes, seconds;
     setInterval(function () {
